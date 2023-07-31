@@ -52,7 +52,7 @@ function App() {
       {
         id: "flights-1",
         label: "Flights #1",
-        color: [194, 29, 29],
+
         data: flightData.slice(0, 15000),
       },
       {autoCreateLayers: false}
@@ -61,7 +61,6 @@ function App() {
       {
         id: "flights-2",
         label: "Flights #2",
-        color: [94, 129, 29],
         data: flightData.slice(10000),
       },
       {autoCreateLayers: false}
