@@ -21,6 +21,7 @@ function layerToLayerCreationProps(layerConfig) {
 async function fetchFlightData() {
   const response = await fetch("/data/flights.csv");
   const data = csvParse(await response.text());
+  data.sort((a, b) => a.timestamp - b.timestamp);
   return data;
 }
 
@@ -52,7 +53,7 @@ function App() {
         id: "flights-1",
         label: "Flights #1",
         color: [194, 29, 29],
-        data: flightData.slice(0, 10000),
+        data: flightData.slice(0, 15000),
       },
       {autoCreateLayers: false}
     );
@@ -77,6 +78,10 @@ function App() {
         },
       })
     );
+
+    //map.updateLayer("flights-1", {isVisible: false});
+    // map.updateLayer("flights-1", {isVisible: true});
+
     map.addLayer(
       layerToLayerCreationProps({
         ...tripLayerConfig,
