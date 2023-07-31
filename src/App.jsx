@@ -78,9 +78,6 @@ function App() {
       })
     );
 
-    //map.updateLayer("flights-1", {isVisible: false});
-    // map.updateLayer("flights-1", {isVisible: true});
-
     map.addLayer(
       layerToLayerCreationProps({
         ...tripLayerConfig,
