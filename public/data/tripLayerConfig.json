@@ -1,0 +1,85 @@
+{
+  "id": "ah79kr",
+  "type": "trip",
+  "config": {
+    "dataId": "8e11280c-60a2-4bbc-9c19-0017d7e14063",
+    "columnMode": "table",
+    "label": "first part",
+    "color": [221, 178, 124],
+    "columns": {
+      "id": "icao24",
+      "lat": "lat",
+      "lng": "lon",
+      "timestamp": "timestamp",
+      "altitude": "altitude"
+    },
+    "isVisible": true,
+    "visConfig": {
+      "opacity": 0.8,
+      "thickness": 2,
+      "colorRange": {
+        "name": "Global Warming",
+        "type": "sequential",
+        "colors": [
+          "#4C0035",
+          "#880030",
+          "#B72F15",
+          "#D6610A",
+          "#EF9100",
+          "#FFC300"
+        ],
+        "category": "Uber"
+      },
+      "trailLength": 180,
+      "fadeTrail": true,
+      "billboard": false,
+      "sizeRange": [0, 10],
+      "sizeScale": 1,
+      "scenegraph": null,
+      "scenegraphEnabled": false,
+      "scenegraphColorEnabled": false,
+      "scenegraphUseTrailColor": false,
+      "scenegraphColor": null,
+      "scenegraphCustomModelUrl": "",
+      "adjustRoll": 0,
+      "adjustPitch": 0,
+      "adjustYaw": 0,
+      "invertRoll": false,
+      "invertPitch": false,
+      "invertYaw": false,
+      "fixedRoll": true,
+      "fixedPitch": true,
+      "fixedYaw": true
+    },
+    "hidden": false,
+    "textLabel": [
+      {
+        "field": [],
+        "color": [255, 255, 255],
+        "size": 18,
+        "offset": [0, 0],
+        "anchor": "start",
+        "alignment": "center",
+        "outlineWidth": 0,
+        "outlineColor": [255, 0, 0, 255],
+        "background": false,
+        "backgroundColor": [0, 0, 200, 255]
+      }
+    ]
+  },
+  "visualChannels": {
+    "colorField": {
+      "name": "altitude",
+      "type": "real"
+    },
+    "colorScale": "quantile",
+    "sizeField": null,
+    "sizeScale": "linear",
+    "rollField": null,
+    "rollScale": "linear",
+    "pitchField": null,
+    "pitchScale": "linear",
+    "yawField": null,
+    "yawScale": "linear"
+  }
+}
